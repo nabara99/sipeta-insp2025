@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreSubRequest;
 use App\Models\Kegiatan;
+use App\Models\Pptk;
 use App\Models\Sub;
 use Illuminate\Http\Request;
 
@@ -28,7 +29,8 @@ class SubController extends Controller
     public function create()
     {
         $kegiatans = Kegiatan::all();
-        return view('pages.sub.create', compact('kegiatans'));
+        $pptks = Pptk::all();
+        return view('pages.sub.create', compact('kegiatans','pptks'));
     }
 
     /**
@@ -56,7 +58,8 @@ class SubController extends Controller
     {
         $sub = Sub::findOrFail($id);
         $kegiatans = Kegiatan::all();
-        return view('pages.sub.edit', compact('sub', 'kegiatans'));
+        $pptks = Pptk::all();
+        return view('pages.sub.edit', compact('sub', 'kegiatans', 'pptks'));
     }
 
     /**

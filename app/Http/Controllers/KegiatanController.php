@@ -29,8 +29,7 @@ class KegiatanController extends Controller
     public function create()
     {
         $programs = Program::all();
-        $pptks = Pptk::all();
-        return view('pages.kegiatan.create', compact('programs', 'pptks'));
+        return view('pages.kegiatan.create', compact('programs'));
     }
 
     /**
@@ -78,6 +77,6 @@ class KegiatanController extends Controller
      */
     public function destroy(Kegiatan $kegiatan)
     {
-        
+
     }
 }

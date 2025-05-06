@@ -72,6 +72,23 @@
                                             </div>
                                         @enderror
                                     </div>
+                                    <div class="form-group">
+                                        <label class="form-label">PPTK</label>
+                                        <select class="form-control selectric @error('pptk_id') is-invalid @enderror"
+                                            name="pptk_id">
+                                            <option value="" selected disabled>-- Pilih PPTK --</option>
+                                            @foreach ($pptks as $pptk)
+                                                <option value="{{ $pptk->id }}"
+                                                    {{ old('pptk_id') == $pptk->id ? 'selected' : '' }}>
+                                                    {{ $pptk->nip_pptk }} / {{ $pptk->nama_pptk }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('pptk_id')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
                                     <div class="card-footer text-right">
                                         <button class="btn btn-primary">Simpan</button>
                                     </div>

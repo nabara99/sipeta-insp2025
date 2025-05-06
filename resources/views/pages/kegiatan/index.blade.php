@@ -43,7 +43,6 @@
                                             <th>Kode</th>
                                             <th>Nama Program</th>
                                             <th>Nama Kegiatan</th>
-                                            <th>PPTK</th>
                                             <th>Aksi</th>
                                         </tr>
                                         @foreach ($kegiatans as $kegiatan)
@@ -52,7 +51,6 @@
                                                 </td>
                                                 <td>{{ $kegiatan->program->nama_program }}</td>
                                                 <td>{{ $kegiatan->nama_kegiatan }}</td>
-                                                <td>{{ $kegiatan->pptk->nama_pptk ?? '' }}</td>
                                                 <td>
                                                     <div class="d-flex justify-content-left">
                                                         <a href="{{ route('kegiatan.edit', $kegiatan->id) }}"

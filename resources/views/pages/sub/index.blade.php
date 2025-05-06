@@ -43,6 +43,7 @@
                                             <th>Kode</th>
                                             <th>Nama Kegiatan</th>
                                             <th>Nama Sub Kegiatan</th>
+                                            <th>PPTK</th>
                                             <th>Aksi</th>
                                         </tr>
                                         @foreach ($subs as $sub)
@@ -51,6 +52,7 @@
                                                 </td>
                                                 <td>{{ $sub->kegiatan->nama_kegiatan }}</td>
                                                 <td>{{ $sub->nama_sub }}</td>
+                                                <td>{{ $sub->pptk->nama_pptk }}</td>
                                                 <td>
                                                     <div class="d-flex justify-content-left">
                                                         <a href="{{ route('sub.edit', $sub->id) }}"

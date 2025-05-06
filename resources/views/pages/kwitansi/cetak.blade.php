@@ -292,8 +292,8 @@ setlocale(LC_TIME, 'id_ID');
                 NIP.{{ $item->nip_pa }}
             </td>
             <td>
-                {{ $kwitansi->anggaran->sub->kegiatan->pptk->nama_pptk }} <br>
-                NIP.{{ $kwitansi->anggaran->sub->kegiatan->pptk->nip_pptk }}
+                {{ $kwitansi->anggaran->sub->pptk->nama_pptk }} <br>
+                NIP.{{ $kwitansi->anggaran->sub->pptk->nip_pptk }}
             </td>
             <td>
                 {{ $item->nama_bp }} <br>

@@ -25,7 +25,6 @@ class StoreKegiatanRequest extends FormRequest
             'kode_kegiatan' => 'required|size:4',
             'nama_kegiatan' => 'required|unique:kegiatans,nama_kegiatan',
             'program_id' => 'required',
-            'pptk_id' => 'required',
         ];
     }
 }

@@ -13,11 +13,17 @@ class Sub extends Model
         'nama_sub',
         'kode_sub',
         'kegiatan_id',
+        'pptk_id',
     ];
 
     public function kegiatan()
     {
         return $this->belongsTo(Kegiatan::class);
         return $this->belongsTo(Program::class);
+    }
+
+    public function pptk()
+    {
+        return $this->belongsTo(Pptk::class);
     }
 }
