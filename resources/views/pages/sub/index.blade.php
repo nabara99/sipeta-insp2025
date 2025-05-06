@@ -52,7 +52,7 @@
                                                 </td>
                                                 <td>{{ $sub->kegiatan->nama_kegiatan }}</td>
                                                 <td>{{ $sub->nama_sub }}</td>
-                                                <td>{{ $sub->pptk->nama_pptk }}</td>
+                                                <td>{{ $sub->pptk->nama_pptk ?? '' }}</td>
                                                 <td>
                                                     <div class="d-flex justify-content-left">
                                                         <a href="{{ route('sub.edit', $sub->id) }}"
