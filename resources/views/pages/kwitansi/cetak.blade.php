@@ -60,7 +60,7 @@ setlocale(LC_TIME, 'id_ID');
             <td width="1%">:</td>
             <td width="12%" colspan="2">2025</td>
             <td width="1%"></td>
-            <td width="22%">Dibukukan tanggal</td>
+            <td width="22%">Tanggal BKU</td>
             <td width="1%">:</td>
             <td>{{ Carbon::parse($kwitansi->tgl)->isoFormat('D MMMM Y') }}</td>
         </tr>
@@ -69,7 +69,7 @@ setlocale(LC_TIME, 'id_ID');
             <td>: </td>
             <td colspan="2">{{ $kwitansi->anggaran->sub->kegiatan->program->kode_program }}</td>
             <td></td>
-            <td>Cheque No.</td>
+            <td>TNT No.</td>
             <td>:</td>
             <td>-</td>
         </tr>
@@ -82,7 +82,7 @@ setlocale(LC_TIME, 'id_ID');
             <td></td>
             <td>Buku Kas No.</td>
             <td>:</td>
-            <td>{{ $kwitansi->kw_id }}/ inps/ 2025</td>
+            <td>{{ $kwitansi->kw_id }}/SPJ.GU- &nbsp;&nbsp;&nbsp;&nbsp;/ID/2025</td>
         </tr>
         <tr style="font-size: 8pt;">
             <td>Kode Sub Kegiatan</td>
