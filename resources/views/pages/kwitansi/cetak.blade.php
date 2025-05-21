@@ -82,7 +82,7 @@ setlocale(LC_TIME, 'id_ID');
             <td></td>
             <td>Buku Kas No.</td>
             <td>:</td>
-            <td>{{ $kwitansi->kw_id }}/SPJ.GU- &nbsp;&nbsp;&nbsp;&nbsp;/ID/2025</td>
+            <td>{{str_pad($kwitansi->kw_id, 3, '0', STR_PAD_LEFT) }}/SPJ.GU- &nbsp;&nbsp;&nbsp;&nbsp;/ID/2025</td>
         </tr>
         <tr style="font-size: 8pt;">
             <td>Kode Sub Kegiatan</td>
