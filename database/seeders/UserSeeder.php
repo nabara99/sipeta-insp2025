@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'name' => 'Taufiqurrahman',
             'email' => 'taufiq@gmail.com',
             'roles' => 'admin',
-            'password' => Hash::make('poro990909'),
+            'password' => Hash::make('password'),
         ]);
     }
 }
